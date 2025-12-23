@@ -52,3 +52,11 @@ function typeEffect() {
 }
 
 window.addEventListener("load", typeEffect);
+
+// Hide loader after page loads
+window.addEventListener("load", () => {
+    const loader = document.getElementById("loader");
+    if (loader) {
+        loader.classList.add("hidden");
+    }
+});
