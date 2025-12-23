@@ -394,3 +394,37 @@ footer {
         margin-left: 30px;
     }
 }
+.cta-button {
+    transition: 0.3s ease;
+}
+
+.cta-button:hover {
+    box-shadow: 0 0 20px rgba(0,123,255,0.6);
+    transform: translateY(-3px);
+}
+.scroll-indicator {
+    width: 24px;
+    height: 40px;
+    border: 2px solid #4da3ff;
+    border-radius: 20px;
+    margin: 30px auto 0;
+    position: relative;
+}
+
+.scroll-indicator::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background: #4da3ff;
+    border-radius: 50%;
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: scroll 1.5s infinite;
+}
+
+@keyframes scroll {
+    0% { opacity: 1; top: 8px; }
+    100% { opacity: 0; top: 22px; }
+}
