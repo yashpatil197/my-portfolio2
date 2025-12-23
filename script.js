@@ -67,3 +67,27 @@ const navLinks = document.getElementById("nav-links");
 menuToggle.addEventListener("click", () => {
     navLinks.classList.toggle("active");
 });
+/* ================= PROGRESS LOADER ================= */
+let progress = 0;
+const progressBar = document.getElementById("loader-progress");
+const progressText = document.getElementById("loader-percent");
+const loader = document.getElementById("loader");
+
+const loadingInterval = setInterval(() => {
+    if (progress < 90) {
+        progress += Math.floor(Math.random() * 5) + 1;
+        progressBar.style.width = progress + "%";
+        progressText.textContent = progress + "%";
+    }
+}, 200);
+
+window.addEventListener("load", () => {
+    clearInterval(loadingInterval);
+    progress = 100;
+    progressBar.style.width = "100%";
+    progressText.textContent = "100%";
+
+    setTimeout(() => {
+        loader.classList.add("hidden");
+    }, 500);
+});
