@@ -987,7 +987,12 @@ body.light header {
 }
 
 /* ---------- CARDS (PROJECT / CONTACT / TIMELINE) ---------- */
-.project-card,
+.project-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
 .timeline-content,
 .contact-cards {
     display: grid;
