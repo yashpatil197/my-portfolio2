@@ -91,3 +91,24 @@ window.addEventListener("load", () => {
         loader.classList.add("hidden");
     }, 500);
 });
+/* ===== DARK / LIGHT MODE ===== */
+const themeToggle = document.getElementById("theme-toggle");
+const body = document.body;
+
+// Load saved theme
+if (localStorage.getItem("theme") === "light") {
+    body.classList.add("light");
+    themeToggle.textContent = "☀️";
+}
+
+themeToggle.addEventListener("click", () => {
+    body.classList.toggle("light");
+
+    if (body.classList.contains("light")) {
+        localStorage.setItem("theme", "light");
+        themeToggle.textContent = "☀️";
+    } else {
+        localStorage.setItem("theme", "dark");
+        themeToggle.textContent = "🌙";
+    }
+});
