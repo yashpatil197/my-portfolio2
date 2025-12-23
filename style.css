@@ -264,3 +264,29 @@ footer {
     gap: 15px;
     flex-wrap: wrap;
 }
+/* Tech Stack Container */
+.tech-stack {
+    display: flex;
+    justify-content: center;   /* center tags */
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 12px 0 18px;
+}
+
+/* Tech Tag Style */
+.tech-stack span {
+    font-size: 12px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.12);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    transition: 0.3s ease;
+}
+
+/* Hover Effect */
+.tech-stack span:hover {
+    background: #4da3ff;
+    color: #000;
+    transform: translateY(-2px);
+}
