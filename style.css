@@ -989,10 +989,18 @@ body.light header {
 /* ---------- CARDS (PROJECT / CONTACT / TIMELINE) ---------- */
 .project-card,
 .timeline-content,
-.contact-card {
-    background: var(--bg-card);
-    color: var(--text-main);
-    border: 1px solid var(--border-soft);
+.contact-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* Mobile: 1 per row */
+@media (max-width: 768px) {
+    .contact-cards {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* ---------- SECTION DIVIDERS ---------- */
@@ -1026,3 +1034,15 @@ footer {
     background: var(--bg-section);
     color: var(--text-muted);
 }
+/* WhatsApp highlight */
+.highlight-link.whatsapp {
+    background: rgba(37, 211, 102, 0.18);
+    color: #25D366;
+}
+
+.highlight-link.whatsapp:hover {
+    background: #25D366;
+    color: #000;
+    box-shadow: 0 0 18px rgba(37, 211, 102, 0.7);
+}
+
