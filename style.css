@@ -638,3 +638,38 @@ body {
     transition: width 0.2s ease;
 }
 
+/* ===== THEME VARIABLES ===== */
+:root {
+    --bg-color: #0b0f14;
+    --text-color: #ffffff;
+    --card-bg: #1f1f1f;
+    --accent: #4da3ff;
+}
+
+body.light {
+    --bg-color: #f5f7fb;
+    --text-color: #111111;
+    --card-bg: #ffffff;
+    --accent: #4da3ff;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Cards adapt to theme */
+.project-card,
+.timeline-content {
+    background: var(--card-bg);
+}
+
+/* Toggle button */
+.theme-toggle {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: var(--text-color);
+}
