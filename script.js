@@ -39,3 +39,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+
+const text = "A passionate Web Developer & UI/UX Designer creating modern and interactive web experiences.";
+let index = 0;
+
+function typeEffect() {
+    if (index < text.length) {
+        document.querySelector(".typing").textContent += text.charAt(index);
+        index++;
+        setTimeout(typeEffect, 40);
+    }
+}
+
+window.addEventListener("load", typeEffect);
