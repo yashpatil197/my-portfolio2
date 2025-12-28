@@ -115,13 +115,18 @@ themeToggle.addEventListener("click", () => {
 const scrollBtn = document.getElementById("scrollToTop");
 
 window.addEventListener("scroll", () => {
-    if (window.scrollY > 300) {
+    // Show button if scrolled down more than 500px
+    if (window.scrollY > 500) {
         scrollBtn.classList.add("active");
     } else {
         scrollBtn.classList.remove("active");
     }
 });
 
+// Smooth scroll to top when clicked
 scrollBtn.addEventListener("click", () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
 });
