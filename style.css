@@ -1129,23 +1129,39 @@ footer {
 }
 }
 #scrollToTop {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: var(--primary-color, #007bff); /* Use your theme color */
-    color: white;
-    border: none;
-    border-radius: 50%;
+    /* POSITIONING - This makes it float */
+    position: fixed; 
+    bottom: 30px;   /* Distance from bottom */
+    right: 30px;    /* Distance from right */
+    z-index: 9999;  /* Ensures it stays on top of everything (images, cards, etc) */
+
+    /* STYLING - Makes it look good */
     width: 50px;
     height: 50px;
+    background-color: #007bff; /* Change this to match your theme color */
+    color: white;
+    border: none;
+    border-radius: 50%; /* Makes it a circle */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adds a shadow for depth */
     cursor: pointer;
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.3s ease;
-    z-index: 1000;
+    font-size: 20px;
+    
+    /* ANIMATION - Smooth appearance */
+    opacity: 0;             /* Hidden by default */
+    pointer-events: none;   /* Can't be clicked when hidden */
+    transition: all 0.4s ease;
+    transform: translateY(20px); /* Slightly pushed down when hidden */
 }
 
+/* This class will be added by JavaScript when we scroll down */
 #scrollToTop.active {
     opacity: 1;
     pointer-events: all;
+    transform: translateY(0); /* Returns to normal position */
+}
+
+/* Hover Effect */
+#scrollToTop:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: scale(1.1); /* Slightly grows when you hover */
 }
