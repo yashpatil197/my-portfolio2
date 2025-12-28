@@ -1128,3 +1128,24 @@ footer {
     transform: scale(0.95);
 }
 }
+#scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: var(--primary-color, #007bff); /* Use your theme color */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+#scrollToTop.active {
+    opacity: 1;
+    pointer-events: all;
+}
