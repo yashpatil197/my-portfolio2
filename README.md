@@ -5,7 +5,7 @@ Welcome to the repository for my personal portfolio website. This project serves
 It features a modern, dark-themed (with toggle), and responsive design built to highlight my projects and technical expertise.
 
 ## 🚀 Live Demo
-**[Click here to view the Live Site](https://yashpatil197.github.io/my-portfolio2/)** *(Note: Replace the link above if your repository name is different)*
+**[Click here to view the Live Site](https://yashpatil197.github.io/my-portfolio2/)** 
 
 ---
 
