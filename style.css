@@ -1,3 +1,4 @@
+/* wave function for the HII*/
 .wave {
     display: inline-block;
     animation: wave 2.5s infinite;
@@ -880,12 +881,7 @@ body.light .highlight-link.github {
     100% { box-shadow: 0 0 0 rgba(0,0,0,0); }
 }
 
-/* =====================================================
-   FULL DARK & LIGHT MODE OPTIMIZATION (GLOBAL FIX)
-   Paste ONCE at bottom of style.css
-===================================================== */
-
-/* ---------- THEME VARIABLES ---------- */
+/* ---------- THEME VARIABLES ---------- */ /*for light and dark theme*/
 :root {
     --bg-main: #0b0f14;
     --bg-section: #0f141b;
@@ -927,7 +923,7 @@ p {
     color: var(--text-muted);
 }
 
-/* ---------- NAVBAR FIX ---------- */
+/* ---------- NAVBAR ---------- */
 header {
     background: linear-gradient(
         to bottom,
@@ -948,7 +944,7 @@ body.light header {
     color: var(--accent);
 }
 
-/* ---------- ABOUT SECTION FIX ---------- */
+/* ---------- ABOUT SECTION ---------- */
 .about {
     background: var(--bg-section);
 }
