@@ -245,30 +245,54 @@
         </div>
      <div class="skills-divider"></div>
   </div>
-   <div class="divider-fade"></div>
+  <div class="divider-fade"></div>
 
 <section id="github" class="github-section">
-    <h2 data-aos="fade-right">Open Source Activity</h2>
-    <p class="section-subtitle" data-aos="fade-up">My real-time coding streaks and achievements.</p>
+    <div style="text-align: center;">
+        <h2 data-aos="fade-right">Open Source Activity</h2>
+        <p class="section-subtitle" data-aos="fade-up">Real-time data fetched via GitHub API.</p>
+    </div>
 
-    <div class="github-container">
+    <div class="github-container-wide">
         
-        <div class="github-card" data-aos="zoom-in" data-aos-delay="100">
+        <div class="streak-image-box" data-aos="fade-right">
             <img src="https://github-readme-streak-stats.herokuapp.com/?user=yashpatil197&theme=tokyonight&hide_border=true&background=00000000" 
-                 alt="Yash's GitHub Streak"
-                 style="height: 180px;"> 
+                 alt="Yash's GitHub Streak">
         </div>
 
-        <div class="github-card" data-aos="zoom-in" data-aos-delay="200">
-            <img src="https://github-profile-trophy.vercel.app/?username=yashpatil197&theme=tokyonight&no-frame=true&no-bg=true&margin-w=4" 
-                 alt="GitHub Trophies">
+        <div class="static-stats-grid">
+            
+            <div class="stat-card" data-aos="zoom-in" data-aos-delay="100">
+                <i class="fas fa-project-diagram"></i>
+                <h3 id="repo-count">Loading...</h3> 
+                <p>Public Repos</p>
+            </div>
+
+            <div class="stat-card" data-aos="zoom-in" data-aos-delay="200">
+                <i class="fas fa-star"></i>
+                <h3 id="stars-count">Loading...</h3>
+                <p>Stars Earned</p>
+            </div>
+
+            <div class="stat-card" data-aos="zoom-in" data-aos-delay="300">
+                <i class="fas fa-users"></i>
+                <h3 id="followers-count">Loading...</h3>
+                <p>Followers</p>
+            </div>
+
+            <div class="stat-card" data-aos="zoom-in" data-aos-delay="400">
+                <i class="fas fa-laptop-code"></i>
+                <h3 id="top-langs" style="font-size: 1.1rem;">Loading...</h3>
+                <p>Top Languages</p>
+            </div>
+
         </div>
 
     </div>
     
-    <div class="github-btn-wrapper" data-aos="fade-up">
+    <div class="github-btn-wrapper" style="text-align: center; margin-top: 40px;" data-aos="fade-up">
         <a href="https://github.com/yashpatil197" target="_blank" class="cta-button outline-btn">
-            View Full Profile <i class="fab fa-github"></i>
+            View GitHub Profile <i class="fab fa-github"></i>
         </a>
     </div>
 </section>
