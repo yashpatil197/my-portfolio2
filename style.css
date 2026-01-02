@@ -1273,3 +1273,90 @@ footer {
     color: #ccc;
     line-height: 1.6;
 }
+/* --- 1. Main Container: Forces Side-by-Side Layout --- */
+.github-container-wide {
+    display: flex;
+    flex-wrap: wrap; /* Wraps on mobile */
+    justify-content: center;
+    align-items: center;
+    gap: 40px; /* Space between the Image and the Stats Grid */
+    margin-top: 40px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* --- 2. Left Side: Streak Image Styling --- */
+.streak-image-box {
+    flex: 1; /* Takes up equal space */
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.streak-image-box img {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    background: rgba(255, 255, 255, 0.02); 
+    border-radius: 12px;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* --- 3. Right Side: The Grid for Stats --- */
+.static-stats-grid {
+    flex: 1; /* Takes up equal space */
+    min-width: 300px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Forces 2 Columns */
+    gap: 20px;
+}
+
+/* --- 4. The Individual Stat Cards (The Boxes) --- */
+.stat-card {
+    background: rgba(255, 255, 255, 0.05); /* Glass Background */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    border-color: #00c6ff;
+}
+
+.stat-card i {
+    font-size: 2rem;
+    color: #00c6ff;
+    margin-bottom: 10px;
+}
+
+.stat-card h3 {
+    font-size: 1.8rem;
+    margin: 0;
+    color: #fff;
+    font-weight: 700;
+}
+
+.stat-card p {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-top: 5px;
+}
+
+/* --- Mobile Responsive Fix --- */
+@media (max-width: 900px) {
+    .github-container-wide {
+        flex-direction: column; /* Stacks vertically on phone */
+    }
+    .static-stats-grid {
+        width: 100%;
+    }
+}
