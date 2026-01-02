@@ -196,3 +196,36 @@ async function fetchGitHubStats() {
 
 // Run the function immediately when the script loads
 fetchGitHubStats();
+/* =========================================
+   THEME TOGGLE LOGIC
+   ========================================= */
+const themeToggleBtn = document.getElementById('theme-toggle');
+const body = document.body;
+
+// 1. Check if user has a preference saved in LocalStorage
+const currentTheme = localStorage.getItem('theme');
+
+if (currentTheme) {
+    body.setAttribute('data-theme', currentTheme);
+    // Change icon based on theme
+    if (currentTheme === 'light') {
+        themeToggleBtn.innerText = '☀️'; // Sun icon for light mode
+    }
+}
+
+// 2. Event Listener for Button Click
+themeToggleBtn.addEventListener('click', () => {
+    
+    // Check if we are currently in light mode
+    if (body.getAttribute('data-theme') === 'light') {
+        // Switch to Dark
+        body.removeAttribute('data-theme');
+        themeToggleBtn.innerText = '🌙'; // Moon icon
+        localStorage.setItem('theme', 'dark');
+    } else {
+        // Switch to Light
+        body.setAttribute('data-theme', 'light');
+        themeToggleBtn.innerText = '☀️'; // Sun icon
+        localStorage.setItem('theme', 'light');
+    }
+});
