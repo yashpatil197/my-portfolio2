@@ -15,16 +15,120 @@
     60%, 100% { transform: rotate(0deg); }
 } 
 
+
 /* --- Global Styles & Variables --- */
+/* =========================================
+   1. COLOR VARIABLES (THEME CONFIG)
+   ========================================= */
 :root {
-    --bg-color: #121212;
-    --primary-color: #1e1e1e;
-    --secondary-color: #2a2a2a;
-    --text-color: #e0e0e0;
-    --accent-color: #007BFF;
-    --accent-hover: #0056b3;
+    /* --- Default DARK Theme (Your existing look) --- */
+    --bg-color: #0a0a0a;
+    --text-color: #ffffff;
+    --text-muted: #cccccc;
+    --card-bg: rgba(255, 255, 255, 0.05);
+    --card-border: rgba(255, 255, 255, 0.1);
+    --nav-bg: rgba(10, 10, 10, 0.85);
+    --accent-color: #00c6ff;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+    --timeline-line: rgba(255, 255, 255, 0.2);
 }
 
+/* --- LIGHT Theme (New Professional Look) --- */
+[data-theme="light"] {
+    --bg-color: #f3f4f6;       /* Soft cool gray background */
+    --text-color: #1f2937;     /* Dark charcoal text (easier to read than pure black) */
+    --text-muted: #4b5563;     /* Medium gray for subtitles */
+    --card-bg: #ffffff;        /* Pure white cards */
+    --card-border: #e5e7eb;    /* Light gray borders */
+    --nav-bg: rgba(255, 255, 255, 0.9); /* Translucent white nav */
+    --accent-color: #0056b3;   /* Darker Blue for better visibility on white */
+    --shadow-color: rgba(0, 0, 0, 0.05); /* Very soft shadows */
+    --timeline-line: #d1d5db;
+}
+
+/* =========================================
+   2. APPLY VARIABLES TO BODY & ELEMENTS
+   ========================================= */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* Apply to Navbar */
+.navbar {
+    background: var(--nav-bg);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--card-border);
+}
+
+.logo {
+    color: var(--text-color);
+}
+
+.nav-links a {
+    color: var(--text-color);
+}
+
+/* Apply to ALL Cards (Projects, GitHub, Certs, Skills) */
+.project-card, 
+.contact-card, 
+.stat-card, 
+.cert-card, 
+.lang-card,
+.streak-image-box {
+    background: var(--card-bg) !important;
+    border: 1px solid var(--card-border) !important;
+    box-shadow: 0 4px 6px var(--shadow-color);
+    color: var(--text-color);
+}
+
+/* Headings and Paragraphs */
+h1, h2, h3, h4 {
+    color: var(--text-color);
+}
+
+p, .subtitle, .section-subtitle {
+    color: var(--text-muted);
+}
+
+/* Icons in Light Mode */
+.contact-card i, 
+.cert-icon-box i,
+.stat-card i {
+    color: var(--accent-color);
+}
+
+/* Buttons */
+.cta-button {
+    background: var(--accent-color);
+    color: #fff; /* Always white text on the blue button */
+}
+
+.outline-btn {
+    background: transparent;
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color);
+}
+
+.outline-btn:hover {
+    background: var(--accent-color);
+    color: #fff;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+/* Timeline Fix */
+.timeline-item::before {
+    background: var(--timeline-line);
+}
 * {
     margin: 0;
     padding: 0;
