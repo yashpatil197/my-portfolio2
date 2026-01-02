@@ -15,138 +15,14 @@
     60%, 100% { transform: rotate(0deg); }
 } 
 
-
 /* --- Global Styles & Variables --- */
-/* =========================================
-   1. COLOR VARIABLES (THEME CONFIG)
-   ========================================= */
 :root {
-    /* --- Default DARK Theme --- */
-    --bg-color: #0a0a0a;
-    --text-main: #ffffff;
-    --text-muted: #cccccc;
-    --card-bg: rgba(255, 255, 255, 0.05);
-    --card-border: rgba(255, 255, 255, 0.1);
-    --nav-bg: rgba(10, 10, 10, 0.85);
-    --accent-color: #00c6ff;
-    --shadow-color: rgba(0, 0, 0, 0.3);
-    --timeline-line: rgba(255, 255, 255, 0.2);
-}
-
-/* --- LIGHT Theme Settings --- */
-[data-theme="light"] {
-    --bg-color: #f9fafb;       /* Very light gray (almost white) */
-    --text-main: #111827;      /* Dark Charcoal (Not pure black) */
-    --text-muted: #4b5563;     /* Medium Gray */
-    --card-bg: #ffffff;        /* Pure White Cards */
-    --card-border: #e5e7eb;    /* Light Gray Border */
-    --nav-bg: rgba(255, 255, 255, 0.95); /* White Translucent Nav */
-    --accent-color: #0284c7;   /* Darker Blue (Readable on white) */
-    --shadow-color: rgba(0, 0, 0, 0.1); /* Soft Shadows */
-    --timeline-line: #d1d5db;
-}
-
-/* =========================================
-   2. GLOBAL RESET & BODY APPLY
-   ========================================= */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-body {
-    background-color: var(--bg-color);
-    color: var(--text-main);
-    transition: background-color 0.3s ease, color 0.3s ease;
-    overflow-x: hidden;
-}
-
-/* =========================================
-   3. COMPONENT COLOR FIXES
-   ========================================= */
-
-/* Headings */
-h1, h2, h3, h4, h5, h6 {
-    color: var(--text-main);
-}
-
-/* Paragraphs & Subtitles */
-p, .subtitle, .section-subtitle, small {
-    color: var(--text-muted);
-}
-
-/* --- Navbar Fix --- */
-.navbar {
-    background: var(--nav-bg);
-    border-bottom: 1px solid var(--card-border);
-}
-
-.logo {
-    color: var(--text-main);
-}
-
-.nav-links a {
-    color: var(--text-main);
-}
-
-/* --- CARD FIX (Crucial for Light Mode) --- */
-/* This targets ALL your cards at once */
-.project-card, 
-.contact-card, 
-.stat-card, 
-.cert-card, 
-.lang-card,
-.streak-image-box,
-.github-card {
-    background: var(--card-bg) !important;
-    border: 1px solid var(--card-border) !important;
-    box-shadow: 0 4px 10px var(--shadow-color);
-    color: var(--text-main) !important; /* Forces text to be dark in light mode */
-}
-
-/* Specific fix for text inside cards to ensure it's not stuck on white */
-.project-card p, 
-.cert-card p, 
-.stat-card p,
-.lang-name {
-    color: var(--text-muted) !important;
-}
-
-.project-card h3, 
-.cert-card h3, 
-.stat-card h3,
-.lang-percent {
-    color: var(--text-main) !important;
-}
-
-/* --- Icons Fix --- */
-.contact-card i, 
-.cert-icon-box i,
-.stat-card i,
-.lang-card i {
-    color: var(--accent-color);
-}
-
-/* --- Footer --- */
-footer {
-    background: var(--card-bg); /* Matches card color (White in light mode) */
-    border-top: 1px solid var(--card-border);
-}
-footer p {
-    color: var(--text-muted);
-}
-
-/* --- Timeline Fix --- */
-.timeline-item::before {
-    background: var(--timeline-line);
-}
-
-.timeline-content {
-    background: var(--card-bg);
-    border: 1px solid var(--card-border);
-    color: var(--text-main);
+    --bg-color: #121212;
+    --primary-color: #1e1e1e;
+    --secondary-color: #2a2a2a;
+    --text-color: #e0e0e0;
+    --accent-color: #007BFF;
+    --accent-hover: #0056b3;
 }
 * {
     margin: 0;
