@@ -1483,3 +1483,72 @@ footer {
         width: 100%;
     }
 }
+/* =======================================================
+   LIGHT MODE TEXT VISIBILITY FIX (FORCE OVERRIDE)
+   Paste this at the very bottom of your style.css
+   ======================================================= */
+
+/* 1. Force Global Text to be Dark in Light Mode */
+[data-theme="light"] body,
+[data-theme="light"] p,
+[data-theme="light"] .subtitle,
+[data-theme="light"] .section-subtitle,
+[data-theme="light"] .timeline-content p,
+[data-theme="light"] small {
+    color: #333333 !important; /* Dark Gray */
+}
+
+/* 2. Force Headings to be Black */
+[data-theme="light"] h1,
+[data-theme="light"] h2,
+[data-theme="light"] h3,
+[data-theme="light"] h4,
+[data-theme="light"] h5,
+[data-theme="light"] h6,
+[data-theme="light"] .logo {
+    color: #000000 !important; /* Pure Black */
+}
+
+/* 3. Force Card Text (Projects, GitHub, Certifications) */
+[data-theme="light"] .project-card,
+[data-theme="light"] .stat-card,
+[data-theme="light"] .cert-card,
+[data-theme="light"] .lang-card,
+[data-theme="light"] .contact-card {
+    background: #ffffff !important;
+    border-color: #e5e7eb !important;
+    color: #333333 !important;
+}
+
+/* Specific Headings inside cards */
+[data-theme="light"] .project-card h3,
+[data-theme="light"] .stat-card h3,
+[data-theme="light"] .cert-card h3,
+[data-theme="light"] .contact-card h4 {
+    color: #000000 !important;
+}
+
+/* 4. Force Navigation Links */
+[data-theme="light"] .navbar a,
+[data-theme="light"] .nav-links a {
+    color: #000000 !important;
+}
+
+/* 5. Force Buttons */
+/* Main Button (Keep White Text) */
+[data-theme="light"] .cta-button {
+    color: #ffffff !important;
+}
+/* Outline Button (Dark Text) */
+[data-theme="light"] .outline-btn {
+    color: #0056b3 !important;
+    border-color: #0056b3 !important;
+}
+[data-theme="light"] .outline-btn:hover {
+    color: #ffffff !important;
+}
+
+/* 6. Fix "Typing" Text in Hero Section */
+[data-theme="light"] .typing {
+    color: #0056b3 !important; /* Make it Blue */
+}
