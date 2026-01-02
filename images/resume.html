@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash Patil - Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #2980b9;
+            --text-color: #333;
+            --light-gray: #f4f4f4;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            font-size: 11pt;
+        }
+
+        .container {
+            width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            background: white;
+        }
+
+        /* Header */
+        header {
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            margin: 0;
+            color: var(--primary-color);
+            font-size: 28pt;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .role {
+            font-size: 14pt;
+            color: var(--accent-color);
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        .contact-info {
+            font-size: 10pt;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            color: #555;
+        }
+
+        .contact-info a {
+            color: #555;
+            text-decoration: none;
+        }
+
+        .contact-info i {
+            color: var(--accent-color);
+            margin-right: 5px;
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 14pt;
+            text-transform: uppercase;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            margin: 0;
+            font-size: 12pt;
+            color: #000;
+        }
+
+        .sub-txt {
+            font-size: 10pt;
+            color: #666;
+            font-style: italic;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        ul {
+            margin: 5px 0 10px 20px;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 4px;
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .skill-category strong {
+            color: var(--accent-color);
+        }
+
+        /* Print Button (Hidden in PDF) */
+        .print-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 15px 30px;
+            background: var(--accent-color);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .print-btn:hover {
+            background: #1f6391;
+        }
+
+        @media print {
+            body { margin: 0; background: white; }
+            .container { width: 100%; padding: 0; margin: 0; }
+            .print-btn { display: none; }
+            a { text-decoration: none; color: #000; }
+        }
+    </style>
+</head>
+<body>
+
+    <button class="print-btn" onclick="window.print()">Download PDF</button>
+
+    <div class="container">
+        <header>
+            <h1>Yash Patil</h1>
+            <div class="role">Computer Engineering Student | Frontend Developer</div>
+            <div class="contact-info">
+                <span><i class="fas fa-envelope"></i> Yashanil1971@gmail.com</span>
+                <span><i class="fas fa-phone"></i> +91 8208543136</span>
+                <span><i class="fas fa-map-marker-alt"></i> Tathawade, Pune</span>
+                <span><i class="fab fa-linkedin"></i> linkedin.com/in/yash-patil</span>
+                <span><i class="fab fa-github"></i> github.com/yashpatil197</span>
+            </div>
+        </header>
+
+        <section>
+            <h2>Education</h2>
+            <div class="item">
+                <h3>Bachelor of Engineering in Computer Engineering</h3>
+                <div class="sub-txt">
+                    <span>JSPM Rajarshi Shahu College of Engineering (RSCOE)</span>
+                    <span>2025 – Present</span>
+                </div>
+                <ul>
+                    <li>Focus: Data Structures, Web Development, C Programming.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <strong>Languages:</strong> C, C++, Java, Python, JavaScript
+                </div>
+                <div class="skill-category">
+                    <strong>Web:</strong> HTML5, CSS3, Responsive Design
+                </div>
+                <div class="skill-category">
+                    <strong>Tools:</strong> Git, GitHub, VS Code
+                </div>
+                <div class="skill-category">
+                    <strong>Interests:</strong> AI/ML, Generative AI, Frontend Dev
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            
+            <div class="item">
+                <h3>Focus Flow - Productivity Dashboard</h3>
+                <div class="sub-txt">
+                    <span>HTML, CSS, Spotify API, LocalStorage</span>
+                </div>
+                <ul>
+                    <li>Built a gamified dashboard combining a Pomodoro timer with drag-and-drop task management.</li>
+                    <li>Integrated Spotify API for focus music and implemented real-time analytics for user habits.</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <h3>LinguaVox - Real-time Translation</h3>
+                <div class="sub-txt">
+                    <span>JavaScript, Web Speech API</span>
+                </div>
+                <ul>
+                    <li>Developed a responsive app for real-time speech-to-text and multi-language translation.</li>
+                    <li>Implemented voice synthesis features with adjustable speed controls for accessibility.</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <h3>Fortress Pro - Secure Password Generator</h3>
+                <div class="sub-txt">
+                    <span>JavaScript, Cryptography Logic</span>
+                </div>
+                <ul>
+                    <li>Designed a secure password tool with real-time entropy analysis to grade password strength.</li>
+                    <li>Created a modern, theme-adaptive UI with session history logging.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Certifications & Achievements</h2>
+            <ul>
+                <li><strong>C Programming Proficiency:</strong> Advanced coursework in pointers and memory management.</li>
+                <li><strong>Generative AI:</strong> Exploring LLM applications and prompt engineering.</li>
+                <li><strong>Hackathon Participant:</strong> Competed in college-level web innovation challenges.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Languages</h2>
+            <p>English (Professional), Hindi (Native), Marathi (Native), German (Basic A1)</p>
+        </section>
+
+    </div>
+
+</body>
+</html>
