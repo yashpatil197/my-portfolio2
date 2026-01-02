@@ -130,3 +130,69 @@ scrollBtn.addEventListener("click", () => {
         behavior: "smooth"
     });
 });
+/* =========================================
+   GITHUB API FETCH FUNCTION
+   ========================================= */
+async function fetchGitHubStats() {
+    const username = 'yashpatil197';
+    
+    // IDs of the HTML elements we want to update
+    const repoElement = document.getElementById('repo-count');
+    const starsElement = document.getElementById('stars-count');
+    const followersElement = document.getElementById('followers-count');
+    const langElement = document.getElementById('top-langs');
+
+    // If these elements don't exist on the page, stop running
+    if (!repoElement) return;
+
+    try {
+        // 1. Fetch Basic User Data (Repos & Followers)
+        const userResponse = await fetch(`https://api.github.com/users/${username}`);
+        const userData = await userResponse.json();
+
+        // Update Repos and Followers
+        repoElement.innerText = userData.public_repos;
+        followersElement.innerText = userData.followers;
+
+        // 2. Fetch Repositories to calculate Stars & Languages
+        const reposResponse = await fetch(`https://api.github.com/users/${username}/repos?per_page=100`);
+        const reposData = await reposResponse.json();
+
+        let totalStars = 0;
+        const languageMap = {};
+
+        // Loop through every repository
+        reposData.forEach(repo => {
+            // Count stars
+            totalStars += repo.stargazers_count;
+
+            // Count languages
+            if (repo.language) {
+                if (languageMap[repo.language]) {
+                    languageMap[repo.language]++;
+                } else {
+                    languageMap[repo.language] = 1;
+                }
+            }
+        });
+
+        // Update Stars
+        starsElement.innerText = totalStars;
+
+        // Calculate Top 2 Languages
+        // Sort languages by usage count (highest to lowest)
+        const sortedLangs = Object.keys(languageMap).sort((a, b) => languageMap[b] - languageMap[a]);
+        
+        // Take the top 2 and join them with a slash
+        const topLangs = sortedLangs.slice(0, 2).join(" / ");
+        langElement.innerText = topLangs || "N/A";
+
+    } catch (error) {
+        console.error("Error fetching GitHub data:", error);
+        // Fallback text if API fails
+        repoElement.innerText = "Error";
+    }
+}
+
+// Run the function immediately when the script loads
+fetchGitHubStats();
