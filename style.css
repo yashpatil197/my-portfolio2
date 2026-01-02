@@ -1552,3 +1552,54 @@ footer {
 [data-theme="light"] .typing {
     color: #0056b3 !important; /* Make it Blue */
 }
+/* =======================================================
+   FINAL FIX: TEXT OUTSIDE BOXES (HERO & SECTIONS)
+   ======================================================= */
+
+/* 1. Fix the Main Body Background & Text */
+[data-theme="light"] body {
+    background-color: #f9f9f9 !important; /* Light Gray Background */
+    color: #1a1a1a !important; /* Almost Black Text */
+}
+
+/* 2. Fix Hero Section ("Hello I'm Yash...") */
+[data-theme="light"] .hero-title {
+    color: #000000 !important;
+}
+
+[data-theme="light"] .subtitle,
+[data-theme="light"] .subtitle span {
+    color: #444444 !important; /* Dark Gray for subtitle */
+}
+
+/* 3. Fix Section Headings (About Me, Work, Contact) */
+[data-theme="light"] h2, 
+[data-theme="light"] .about-content h2,
+[data-theme="light"] #work h2,
+[data-theme="light"] #education h2,
+[data-theme="light"] #contact h2 {
+    color: #000000 !important;
+}
+
+/* 4. Fix Paragraphs outside cards (About Me text) */
+[data-theme="light"] .about-content p {
+    color: #333333 !important;
+}
+
+/* 5. Fix "Soft Skills" Buttons */
+[data-theme="light"] .skills span {
+    background: #ffffff !important;
+    border: 1px solid #ccc !important;
+    color: #000000 !important;
+}
+
+/* 6. Fix "Education Timeline" Text */
+[data-theme="light"] .timeline-content h3 {
+    color: #000000 !important;
+}
+[data-theme="light"] .timeline-content small {
+    color: #555555 !important;
+}
+[data-theme="light"] .timeline-content p {
+    color: #333333 !important;
+}
