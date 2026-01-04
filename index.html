@@ -1,4 +1,4 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,365 +15,403 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
 </head>
 <body>
-
 <div id="loader">
     <div class="loader-box">
+
         <span class="loading-text">Loading</span>
+        
         <span id="loader-percent">0%</span>
+        
         <div class="loader-bar">
             <div class="loader-progress" id="loader-progress"></div>
         </div>
+
     </div>
 </div>
 
-<div class="cursor-dot"></div>
-<div class="cursor-outline"></div>
-
-<header>
-    <nav class="navbar">
-        <div class="logo">Portfolio.</div>
-        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">🌙</button>
-
-        <div class="menu-toggle" id="menu-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-
-        <ul class="nav-links" id="nav-links">
-            <li><a href="#work">Work</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-
-<main>
-    <section class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">
-                Hello, I'm Yash Patil <span class="wave">👋</span>
-            </h1>
-            <p class="subtitle">
-                <span class="typing"></span>
-            </p>
-            
-            <div class="hero-buttons">
-                <a href="#work" class="cta-button" data-aos="fade-up" data-aos-delay="400">View My Work</a>
-                <a href="./images/resume.html" download class="cta-button outline-btn" data-aos="fade-up" data-aos-delay="500">
-                    Resume <i class="fas fa-download"></i>
-                </a>
-            </div>
-
-            <div class="scroll-indicator"></div>
-        </div>
-    </section>
     
-    <div class="divider-fade"></div>
-    
-    <section id="work" class="work">
-        <h2 data-aos="fade-right">Selected Projects</h2>
-        <div class="project-grid">
-            <div class="project-card" data-aos="fade-up" data-aos-delay="400">
-                    <img src="./images/timer%20(2).png" alt="Focus Flow">
-                <h3>Focus Flow</h3>
-                <p>A gamified productivity dashboard combining a Pomodoro timer, drag-and-drop task management, and Spotify integration to maximize focus.</p>
-                <div class="tech-stack">
-                    <span>Spotify Embed</span>
-                    <span>Goal Tracking</span>
-                    <span>Task Management</span>
-                    <span>Data Visualization</span>
-                    <span>Responsive Design</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://yashpatil197.github.io/timer/" target="_blank">Focus Flow</a>
-                    <a href="https://github.com/yashpatil197/timer.git" target="_blank">GitHub</a>
-                </div>
-            </div>
-            
-            <div class="project-card" data-aos="fade-up">
-            <img src="./images/LinguaVox.png" alt="LinguaVox">
-                <h3>LinguaVox</h3>
-                <p>LinguaVox is a mobile-responsive web application that provides real-time translation, voice input, and text-to-speech synthesis.</p>
-                <div class="tech-stack">
-                    <span>Web Speech</span>
-                    <span>Fetch API</span>
-                    <span>Responsive Design</span>
-                    <span>Speed Control</span>
-                    <span>Voice Matching</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://yashpatil197.github.io/LinguaVox2/" target="_blank">LinguaVox</a>
-                    <a href="https://github.com/yashpatil197/my-portfolio2.git" target="_blank">GitHub</a>
-                </div>
-            </div>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
 
-            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-                <img src="./images/FORTRESS%20PRO%20(2).png" alt="Fortress Pro">
-                <h3>Fortress Pro</h3>
-                <p>A cryptographically secure password generator featuring real-time entropy estimation, session history, and a modern theme-adaptive UI.</p>
-                    <div class="tech-stack">
-                    <span>Secure Randomness</span>
-                    <span>Entropy Analysis</span>
-                    <span>Session History</span>
-                    <span>Theme Toggle</span>
-                    <span>Custom Filtering</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://yashpatil197.github.io/FORTRESS-PRO/" target="blank" >FORTRESS PRO</a>
-                    <a href="https://github.com/yashpatil197/FORTRESS-PRO.git" target="_blank">GitHub</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <div class="divider-fade"></div>
-    
-    <section id="about" class="about">
-        <div class="about-content" data-aos="fade-left">
-            <h2>About Me</h2>
-            <p>I am a passionate Frontend Developer with a strong interest in creating clean, responsive, and user-friendly web applications. I enjoy transforming ideas into interactive digital experiences and continuously improving my skills in modern web technologies.</p>
-            
-            <h3>My Coding Skills:</h3>
-            <div class="skills">
-                <span>HTML5</span>
-                <span>CSS3</span>
-                <span>JavaScript</span>
-                <span>C</span>
-                <span>C++</span>
-                <span>Java</span>
-                <span>Python</span>
-            </div>
-        </div>
+    <header>
+        <nav class="navbar">
+    <div class="logo">Portfolio.</div>
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">🌙</button>
+
+
+    <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <ul class="nav-links" id="nav-links">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+    </header>
+
+    <main>
+        <section class="hero">
+    <div class="hero-content">
+        <h1 class="hero-title">
+            Hello, I'm Yash Patil <span class="wave">👋</span>
+        </h1>
+        <p class="subtitle">
+            <span class="typing"></span>
+        </p>
         
-        <div class="skills-divider"></div>
-
-        <h3 class="soft-title">Soft Skills:</h3>
-        <div class="skills soft-skills">
-            <span>Problem Solving</span>
-            <span>Team Collaboration</span>
-            <span>Communication</span>
-            <span>Time Management</span>
-        </div> 
-
-        <div class="divider-fade"></div>
-        
-        <h3 class="soft-title" style="text-align: center;" data-aos="fade-up">Languages Spoken</h3>
-        
-        <div class="language-container">
-            <div class="lang-card" data-aos="fade-up" data-aos-delay="100">
-                <div class="lang-header">
-                    <span class="lang-name">English</span>
-                    <span class="lang-percent">90%</span>
-                </div>
-                <div class="progress-bar-bg">
-                    <div class="progress-fill" style="width: 90%;"></div>
-                </div>
-            </div>
-
-            <div class="lang-card" data-aos="fade-up" data-aos-delay="200">
-                <div class="lang-header">
-                    <span class="lang-name">Hindi</span>
-                    <span class="lang-percent">90%</span>
-                </div>
-                <div class="progress-bar-bg">
-                    <div class="progress-fill" style="width: 90%;"></div>
-                </div>
-            </div>
-
-            <div class="lang-card" data-aos="fade-up" data-aos-delay="300">
-                <div class="lang-header">
-                    <span class="lang-name">Marathi</span>
-                    <span class="lang-percent">90%</span>
-                </div>
-                <div class="progress-bar-bg">
-                    <div class="progress-fill" style="width: 90%;"></div>
-                </div>
-            </div>
-
-            <div class="lang-card" data-aos="fade-up" data-aos-delay="400">
-                <div class="lang-header">
-                    <span class="lang-name">German</span>
-                    <span class="lang-percent">50%</span>
-                </div>
-                <div class="progress-bar-bg">
-                    <div class="progress-fill" style="width: 50%; background: linear-gradient(90deg, #f8b500, #ffae00);"></div>
-                </div>
-            </div>
-        </div>
-        <div class="divider-fade"></div>
-    </section>
-
-    <section id="education" class="experience">
-        <h2 data-aos="fade-right">Education & Experience</h2>
-        <div class="timeline">
-            <div class="timeline-item" data-aos="fade-up">
-                <span class="timeline-dot"></span>
-                <div class="timeline-content">
-                    <h3>Bachelor of Computer Engineering</h3>
-                    <small>2025 – Present</small>
-                    <p>Focused on web development, programming fundamentals, and UI/UX design.</p>
-                </div>
-            </div>
-
-            <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
-                <span class="timeline-dot"></span>
-                <div class="timeline-content">
-                    <h3>Frontend Developer (Projects)</h3>
-                    <small>2025– Present</small>
-                    <p>Building responsive websites and interactive web applications using modern web technologies.</p>
-                </div>
-            </div>
-        </div>      
-    </section>
-
-    <div class="divider-fade"></div>
-
-    <section id="github" class="github-section">
-        <div style="text-align: center;">
-            <h2 data-aos="fade-right">Open Source Activity</h2>
-            <p class="section-subtitle" data-aos="fade-up">Real-time data fetched via GitHub API.</p>
-        </div>
-
-        <div class="github-container-wide">
-            
-            <div class="streak-image-box" data-aos="fade-right">
-                <img src="https://github-readme-streak-stats.herokuapp.com/?user=yashpatil197&theme=tokyonight&hide_border=true&background=00000000&fire=FF4500&ring=FF4500&currStreakNum=FF4500" 
-                     alt="Yash's GitHub Streak">
-            </div>
-
-            <div class="static-stats-grid">
-                
-                <div class="stat-card" data-aos="zoom-in" data-aos-delay="100">
-                    <i class="fas fa-project-diagram"></i>
-                    <h3 id="repo-count">Loading...</h3> 
-                    <p>Public Repos</p>
-                </div>
-
-                <div class="stat-card" data-aos="zoom-in" data-aos-delay="200">
-                    <i class="fas fa-star"></i>
-                    <h3 id="stars-count">Loading...</h3>
-                    <p>Stars Earned</p>
-                </div>
-
-                <div class="stat-card" data-aos="zoom-in" data-aos-delay="300">
-                    <i class="fas fa-users"></i>
-                    <h3 id="followers-count">Loading...</h3>
-                    <p>Followers</p>
-                </div>
-
-                <div class="stat-card" data-aos="zoom-in" data-aos-delay="400">
-                    <i class="fas fa-laptop-code"></i>
-                    <h3 id="top-langs" style="font-size: 1.1rem;">Loading...</h3>
-                    <p>Top Languages</p>
-                </div>
-
-            </div>
-        </div>
-        
-        <div class="github-btn-wrapper" style="text-align: center; margin-top: 40px;" data-aos="fade-up">
-            <a href="https://github.com/yashpatil197" target="_blank" class="cta-button outline-btn">
-                View GitHub Profile <i class="fab fa-github"></i>
+        <div class="hero-buttons">
+            <a href="#work" class="cta-button" data-aos="fade-up" data-aos-delay="400">View My Work</a>
+            <a href="./images/resume.pdf" download class="cta-button outline-btn" data-aos="fade-up" data-aos-delay="500">
+                Resume <i class="fas fa-download"></i>
             </a>
         </div>
-    </section>
 
-    <div class="divider-fade"></div>
-
-    <section id="certifications" class="certifications">
-        <h2 data-aos="fade-right">Certifications & Achievements</h2>
-        <p class="section-subtitle" data-aos="fade-up">Recognitions and technical milestones.</p>
+        <div class="scroll-indicator"></div>
+    </div>
+</section>
         
-        <div class="cert-grid">
-            <div class="cert-card" data-aos="fade-up">
-                <div class="cert-icon-box">
-                    <i class="fas fa-code"></i>
+<div class="divider-fade"></div>
+        
+        <section id="work" class="work">
+            <h2 data-aos="fade-right">Selected Projects</h2>
+            <div class="project-grid">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                     <img src="./images/timer%20(2).png">
+                    <h3>Focus Flow</h3>
+                    <p>A gamified productivity dashboard combining a Pomodoro timer, drag-and-drop task management, and Spotify integration to maximize focus. It features real-time analytics and persistent data tracking to help users build consistent daily habits.</p>
+                    <div class="tech-stack">
+                     <span>Spotify Embed</span>
+                     <span>Goal Tracking</span>
+                     <span>Task Management</span>
+                     <span>Data Visualization</span>
+                     <span>Responsive Design</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://yashpatil197.github.io/timer/" target="_blank">Focus Flow</a>
+                        <a href="https://github.com/yashpatil197/timer.git" target="_blank">GitHub</a>
+                    </div>
                 </div>
-                <h3>C Programming</h3>
-                <p>Advanced proficiency in pointers, memory management, and data structures.</p>
-            </div>
+                <div class="project-card" data-aos="fade-up">
+                <img src="./images/LinguaVox.png">
+                    <h3>LinguaVox </h3>
+                    <p>LinguaVox is a mobile-responsive web application that provides real-time translation, voice input, and text-to-speech synthesis across multiple languages.</p>
+                    <div class="tech-stack">
+                      <span>Web Speech</span>
+                      <span>Fetch API</span>
+                      <span>Responsive Design</span>
+                      <span>Speed Control</span>
+                      <span>Voice Matching</span>
+                    </div>
 
-            <div class="cert-card" data-aos="fade-up" data-aos-delay="100">
-                <div class="cert-icon-box">
-                    <i class="fas fa-brain"></i>
+                    <div class="project-links">
+                        <a href="https://yashpatil197.github.io/LinguaVox2/" target="_blank">LinguaVox</a>
+                        <a href="https://github.com/yashpatil197/my-portfolio2.git" target="_blank">GitHub</a>
+                    </div>
                 </div>
-                <h3>Generative AI</h3>
-                <p>Understanding of LLMs, Prompt Engineering, and AI Tools application.</p>
-            </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="./images/FORTRESS%20PRO%20(2).png">
+                    <h3>Fortress Pro-Secure Password Generator</h3>
+                    <p>A cryptographically secure password generator featuring real-time entropy estimation, session history, and a modern theme-adaptive UI.</p>
+                     <div class="tech-stack">
+                      <span>Secure Randomness</span>
+                      <span>Entropy Analysis</span>
+                      <span>Session History</span>
+                      <span>Theme Toggle</span>
+                      <span>Custom Filtering</span>
+                    </div>
 
-            <div class="cert-card" data-aos="fade-up" data-aos-delay="200">
-                <div class="cert-icon-box">
-                    <i class="fas fa-trophy"></i>
+                    <div class="project-links">
+                        <a href="https://yashpatil197.github.io/FORTRESS-PRO/" target="blank" >FORTRESS PRO</a>
+                        <a href="https://github.com/yashpatil197/FORTRESS-PRO.git" target="_blank">GitHub</a>
+                    </div>
                 </div>
-                <h3>Hackathon Participant</h3>
-                <p>Active participant in college level coding competitions and tech fests.</p>
+                </div>
+            </div>
+        </section>
+        
+      <div class="divider-fade"></div>
+        
+        <section id="about" class="about">
+            <div class="about-content" data-aos="fade-left">
+                <h2>About Me</h2>
+                <p>I am a passionate Frontend Developer with a strong interest in creating clean, responsive, and user-friendly web applications. I enjoy transforming ideas into interactive digital experiences and continuously improving my skills in modern web technologies.</p>
+                <h3>My Coding Skills:</h3>
+                <div class="skills">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                    <span>C</span>
+                    <span>C++</span>
+                    <span>Java</span>
+                    <span>Python</span>
+                </div>
+            </div>
+              <!-- Divider between skills -->
+                 <div class="skills-divider"></div>
+
+                <h3 class="soft-title">Soft Skills:</h3>
+
+                <div class="skills soft-skills">
+                    <span>Problem Solving</span>
+                    <span>Team Collaboration</span>
+                    <span>Communication</span>
+                    <span>Time Management</span>
+             </div> 
+
+            <div class="divider-fade"></div>
+            <!--language soken -->
+            <h3 class="soft-title" style="text-align: center;" data-aos="fade-up">Languages Spoken</h3>
+            
+            <div class="language-container">
+                
+                <div class="lang-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="lang-header">
+                        <span class="lang-name">English</span>
+                        <span class="lang-percent">90%</span>
+                    </div>
+                    <div class="progress-bar-bg">
+                        <div class="progress-fill" style="width: 90%;"></div>
+                    </div>
+                </div>
+
+                <div class="lang-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="lang-header">
+                        <span class="lang-name">Hindi</span>
+                        <span class="lang-percent">90%</span>
+                    </div>
+                    <div class="progress-bar-bg">
+                        <div class="progress-fill" style="width: 90%;"></div>
+                    </div>
+                </div>
+
+                <div class="lang-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="lang-header">
+                        <span class="lang-name">Marathi</span>
+                        <span class="lang-percent">90%</span>
+                    </div>
+                    <div class="progress-bar-bg">
+                        <div class="progress-fill" style="width: 90%;"></div>
+                    </div>
+                </div>
+
+                <div class="lang-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="lang-header">
+                        <span class="lang-name">German</span>
+                        <span class="lang-percent">50%</span>
+                    </div>
+                    <div class="progress-bar-bg">
+                        <div class="progress-fill" style="width: 50%; background: linear-gradient(90deg, #f8b500, #ffae00);"></div>
+                    </div>
+                </div>
+    </div>
+    <div class="divider-fade">
+    </div>
+            
+        </section>
+        <section id="education" class="experience">
+    <h2 data-aos="fade-right">Education & Experience</h2>
+      <div class="timeline">
+
+        <div class="timeline-item" data-aos="fade-up">
+            <span class="timeline-dot"></span>
+            <div class="timeline-content">
+                <h3>Bachelor of Computer Engineering</h3>
+                <small>2025 – Present</small>
+                <p>
+                    Focused on web development, programming fundamentals, and UI/UX design.
+                </p>
             </div>
         </div>
-    </section>
 
-    <div class="divider-fade"></div> 
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+            <span class="timeline-dot"></span>
+            <div class="timeline-content">
+                <h3>Frontend Developer (Projects)</h3>
+                <small>2025– Present</small>
+                <p>
+                    Building responsive websites and interactive web applications using modern web technologies.
+                </p>
+            </div>
+        </div>
+     <div class="skills-divider"></div>
+  </div>
+  <div class="divider-fade"></div>
+
+<section id="github" class="github-section">
+    <div style="text-align: center;">
+        <h2 data-aos="fade-right">Open Source Activity</h2>
+        <p class="section-subtitle" data-aos="fade-up">Real-time data fetched via GitHub API.</p>
+    </div>
+
+    <div class="github-container-wide">
+        
+        <div class="streak-image-box" data-aos="fade-right">
+            <img src="https://github-readme-streak-stats.herokuapp.com/?user=yashpatil197&theme=tokyonight&hide_border=true&background=00000000" 
+                 alt="Yash's GitHub Streak">
+        </div>
+
+        <div class="static-stats-grid">
+            
+            <div class="stat-card" data-aos="zoom-in" data-aos-delay="100">
+                <i class="fas fa-project-diagram"></i>
+                <h3 id="repo-count">Loading...</h3> 
+                <p>Public Repos</p>
+            </div>
+
+            <div class="stat-card" data-aos="zoom-in" data-aos-delay="200">
+                <i class="fas fa-star"></i>
+                <h3 id="stars-count">Loading...</h3>
+                <p>Stars Earned</p>
+            </div>
+
+            <div class="stat-card" data-aos="zoom-in" data-aos-delay="300">
+                <i class="fas fa-users"></i>
+                <h3 id="followers-count">Loading...</h3>
+                <p>Followers</p>
+            </div>
+
+            <div class="stat-card" data-aos="zoom-in" data-aos-delay="400">
+                <i class="fas fa-laptop-code"></i>
+                <h3 id="top-langs" style="font-size: 1.1rem;">Loading...</h3>
+                <p>Top Languages</p>
+            </div>
+
+        </div>
+
+    </div>
     
-    <section id="contact" class="contact">
-        <h2 data-aos="fade-up">Let’s Connect</h2>
+    <div class="github-btn-wrapper" style="text-align: center; margin-top: 40px;" data-aos="fade-up">
+        <a href="https://github.com/yashpatil197" target="_blank" class="cta-button outline-btn">
+            View GitHub Profile <i class="fab fa-github"></i>
+        </a>
+    </div>
+</section>
 
-        <p class="contact-subtitle" data-aos="fade-up" data-aos-delay="100">
-            Have a project idea, internship opportunity, or just want to say hi?
-            I’d love to hear from you.
-        </p>
 
-        <div class="contact-container">
-            <div class="contact-cards">
-                <div class="contact-card">
-                    <i class="fas fa-envelope"></i>
-                    <h4>Email</h4>
-                    <a href="mailto:Yashpatil3495@gmail.com" class="highlight-mail">
-                        Yashpatil3495@gmail.com
-                    </a>
-                </div>
+<div class="divider-fade"></div>
 
-                <div class="contact-card">
-                    <i class="fab fa-whatsapp"></i>
-                    <h4>WhatsApp</h4>
-                    <a href="https://wa.me/918208543136" target="_blank" class="highlight-link whatsapp">
-                        CHAT WITH ME
-                    </a>
-                </div>
 
-                <div class="contact-card">
-                    <i class="fab fa-linkedin"></i>
-                    <h4>LinkedIn</h4>
-                    <a href="https://www.linkedin.com/in/yash-patil-b30b18363" target="_blank" class="highlight-link linkedin">
-                        Yash Patil
-                    </a>
-                </div>
-
-                <div class="contact-card">
-                    <i class="fab fa-github"></i>
-                    <h4>GitHub</h4>
-                    <a href="https://github.com/yashpatil197" target="_blank" class="highlight-link github">
-                        View my work
-                    </a>
-                </div>
+<section id="certifications" class="certifications">
+    <h2 data-aos="fade-right">Certifications & Achievements</h2>
+    <p class="section-subtitle" data-aos="fade-up">Recognitions and technical milestones.</p>
+    
+    <div class="cert-grid">
+        
+        <div class="cert-card" data-aos="fade-up">
+            <div class="cert-icon-box">
+                <i class="fas fa-code"></i>
             </div>
+            <h3>C Programming</h3>
+            <p>Advanced proficiency in pointers, memory management, and data structures.</p>
         </div>
-    </section>
 
-</main>
+        <div class="cert-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="cert-icon-box">
+                <i class="fas fa-brain"></i>
+            </div>
+            <h3>Generative AI</h3>
+            <p>Understanding of LLMs, Prompt Engineering, and AI Tools application.</p>
+        </div>
 
-<footer>
-    <p>&copy; 2025 Yash Patil. All Rights Reserved.</p>
-</footer>
+        <div class="cert-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="cert-icon-box">
+                <i class="fas fa-trophy"></i>
+            </div>
+            <h3>Hackathon Participant</h3>
+            <p>Active participant in college level coding competitions and tech fests.</p>
+        </div>
 
+    </div>
+</section>        
+</section>
+        
+        <div class="divider-fade"></div> 
+        
+       <section id="contact" class="contact">
+    <h2 data-aos="fade-up">Let’s Connect</h2>
+
+    <p class="contact-subtitle" data-aos="fade-up" data-aos-delay="100">
+        Have a project idea, internship opportunity, or just want to say hi?
+        I’d love to hear from you.
+    </p>
+
+    <div class="contact-container">
+
+        <div class="contact-cards">
+
+    <!-- Email -->
+    <div class="contact-card">
+        <i class="fas fa-envelope"></i>
+        <h4>Email</h4>
+        <a href="mailto:Yashpatil3495@gmail.com" class="highlight-mail">
+            Yashpatil3495@gmail.com
+        </a>
+    </div>
+
+    <!-- WhatsApp -->
+    <div class="contact-card">
+        <i class="fab fa-whatsapp"></i>
+        <h4>WhatsApp</h4>
+        <a 
+          href="https://wa.me/918208543136" 
+          target="_blank"
+          class="highlight-link whatsapp"
+        >
+            CHAT WITH ME
+        </a>
+    </div>
+
+    <!-- LinkedIn -->
+    <div class="contact-card">
+        <i class="fab fa-linkedin"></i>
+        <h4>LinkedIn</h4>
+        <a 
+          href="https://www.linkedin.com/in/yash-patil-b30b18363" 
+          target="_blank"
+          class="highlight-link linkedin"
+        >
+            Yash Patil
+        </a>
+    </div>
+
+    <!-- GitHub -->
+    <div class="contact-card">
+        <i class="fab fa-github"></i>
+        <h4>GitHub</h4>
+        <a 
+          href="https://github.com/yashpatil197" 
+          target="_blank"
+          class="highlight-link github"
+        >
+            View my work
+        </a>
+    </div>
+
+</div>
+
+        </div>
+</section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Yash Patil. All Rights Reserved.</p>
+    </footer>
 <button id="scrollToTop" aria-label="Scroll to top">
     <i class="fas fa-arrow-up"></i>
 </button>
-
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
     
 </body>
 </html>
