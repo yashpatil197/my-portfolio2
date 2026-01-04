@@ -1,4 +1,3 @@
-/* wave function for the HII*/
 .wave {
     display: inline-block;
     animation: wave 2.5s infinite;
@@ -215,6 +214,27 @@ nav ul li a {
     padding: 8px 15px;
     border-radius: 5px;
     font-size: 0.9rem;
+}
+
+/* --- Contact Section --- */
+.contact {
+    text-align: center;
+}
+.email-link {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin: 20px 0;
+    padding: 10px 20px;
+    border: 2px solid var(--accent-color);
+    border-radius: 5px;
+}
+.social-links a {
+    font-size: 2rem;
+    margin: 0 15px;
+    color: var(--text-color);
+}
+.social-links a:hover {
+    color: var(--accent-color);
 }
 
 /* --- Footer --- */
@@ -881,7 +901,12 @@ body.light .highlight-link.github {
     100% { box-shadow: 0 0 0 rgba(0,0,0,0); }
 }
 
-/* ---------- THEME VARIABLES ---------- */ /*for light and dark theme*/
+/* =====================================================
+   FULL DARK & LIGHT MODE OPTIMIZATION (GLOBAL FIX)
+   Paste ONCE at bottom of style.css
+===================================================== */
+
+/* ---------- THEME VARIABLES ---------- */
 :root {
     --bg-main: #0b0f14;
     --bg-section: #0f141b;
@@ -923,7 +948,7 @@ p {
     color: var(--text-muted);
 }
 
-/* ---------- NAVBAR ---------- */
+/* ---------- NAVBAR FIX ---------- */
 header {
     background: linear-gradient(
         to bottom,
@@ -944,7 +969,7 @@ body.light header {
     color: var(--accent);
 }
 
-/* ---------- ABOUT SECTION ---------- */
+/* ---------- ABOUT SECTION FIX ---------- */
 .about {
     background: var(--bg-section);
 }
@@ -1139,137 +1164,4 @@ footer {
 #scrollToTop:hover {
     background-color: #0056b3; /* Darker shade on hover */
     transform: scale(1.1); /* Slightly grows when you hover */
-}
-/* Container to Center and Wrap the Boxes */
-.language-container {
-    display: flex;
-    flex-wrap: wrap; /* Allows boxes to move to next line if screen is small */
-    justify-content: center; /* Centers them horizontally */
-    gap: 20px; /* Space between boxes */
-    margin-top: 30px;
-    width: 100%;
-}
-
-/* The Individual "Special Box" */
-.lang-card {
-    background: rgba(255, 255, 255, 0.05); /* Glass effect dark background */
-    border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
-    border-radius: 12px;
-    padding: 20px;
-    width: 220px; /* Fixed width for uniformity */
-    min-width: 200px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, border-color 0.3s ease;
-}
-
-/* Hover Effect for the Box */
-.lang-card:hover {
-    transform: translateY(-5px); /* Floats up slightly */
-    border-color: #00c6ff; /* Border turns blue */
-}
-
-/* Header inside the box (Name + %) */
-.lang-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
-    font-weight: 600;
-    font-size: 1rem;
-    color: #fff;
-}
-
-/* Percentage Text Color */
-.lang-percent {
-    color: #00c6ff;
-    font-size: 0.9rem;
-}
-
-/* Background Bar (Gray track) */
-.progress-bar-bg {
-    width: 100%;
-    height: 8px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-/* Filled Bar (Blue) */
-.progress-fill {
-    height: 100%;
-    background: linear-gradient(90deg, #00c6ff, #0072ff);
-    border-radius: 10px;
-    transition: width 1.5s ease-in-out;
-}
-/* --- Hero Button Group --- */
-.hero-buttons {
-    display: flex;
-    gap: 15px; /* Space between buttons */
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
-
-/* --- Resume Button (Outline Style) --- */
-.outline-btn {
-    background: transparent; /* No background */
-    border: 2px solid #00c6ff; /* Blue border */
-    color: #fff;
-}
-
-.outline-btn:hover {
-    background: rgba(0, 198, 255, 0.1); /* Slight blue tint on hover */
-    transform: translateY(-3px);
-    box-shadow: 0 0 15px rgba(0, 198, 255, 0.4);
-}
-
-.outline-btn i {
-    margin-left: 8px; /* Space between text and download icon */
-}
-
-/* --- Certification Section --- */
-.certifications {
-    padding: 80px 10%;
-    text-align: center;
-}
-
-.cert-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive Grid */
-    gap: 25px;
-    margin-top: 40px;
-}
-
-.cert-card {
-    background: rgba(255, 255, 255, 0.05);
-    padding: 30px;
-    border-radius: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    transition: 0.3s;
-    position: relative;
-    overflow: hidden;
-}
-
-.cert-card:hover {
-    transform: translateY(-10px);
-    border-color: #00c6ff;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-}
-
-.cert-icon-box {
-    font-size: 2.5rem;
-    color: #00c6ff;
-    margin-bottom: 20px;
-}
-
-.cert-card h3 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    color: #fff;
-}
-
-.cert-card p {
-    font-size: 0.9rem;
-    color: #ccc;
-    line-height: 1.6;
 }
